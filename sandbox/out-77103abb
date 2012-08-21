@@ -1,0 +1,634 @@
+Started smoke at 1341118592
+Smoking patch 49f4c4e423fa15e3da8c813a7526bb78740f9018 v5.17.1-268-g49f4c4e
+Stopped smoke at 1341118592
+Started smoke at 1341118592
+
+Configuration: -Dusedevel
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=531438, 229 wallclock secs (48.05 usr  5.45 sys + 376.79 cusr 55.62 csys = 485.91 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2321
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=531451, 221 wallclock secs (50.22 usr  6.86 sys + 340.61 cusr 57.66 csys = 455.35 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2330
+../lib/Benchmark.t..........................................FAILED
+    129
+../lib/Benchmark.t..........................................FAILED
+    Non-zero exit status: 1
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341119146
+Started smoke at 1341119146
+
+Configuration: -Dusedevel -DDEBUGGING
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=531421, 263 wallclock secs (64.29 usr  5.96 sys + 470.67 cusr 58.08 csys = 599.00 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2950
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=531323, 260 wallclock secs (66.21 usr  6.84 sys + 463.86 cusr 61.03 csys = 597.94 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2960
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341119811
+Started smoke at 1341119811
+
+Configuration: -Dusedevel -Duse64bitint
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=531468, 223 wallclock secs (47.91 usr  6.05 sys + 365.13 cusr 54.82 csys = 473.91 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2322
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=531530, 220 wallclock secs (50.12 usr  7.33 sys + 342.46 cusr 58.35 csys = 458.26 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2330
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341120368
+Started smoke at 1341120368
+
+Configuration: -Dusedevel -Duse64bitint -DDEBUGGING
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=531381, 264 wallclock secs (64.15 usr  6.04 sys + 470.52 cusr 58.17 csys = 598.88 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2951
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=531463, 259 wallclock secs (66.36 usr  6.82 sys + 451.39 cusr 61.19 csys = 585.76 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2960
+../lib/Benchmark.t..........................................FAILED
+    129
+../lib/Benchmark.t..........................................FAILED
+    Non-zero exit status: 1
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341121031
+Started smoke at 1341121031
+
+Configuration: -Dusedevel -Dmad
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=531361, 229 wallclock secs (49.05 usr  5.75 sys + 380.26 cusr 59.18 csys = 494.24 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    4112
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+../lib/Benchmark.t..........................................FAILED
+    129
+../lib/Benchmark.t..........................................FAILED
+    Non-zero exit status: 1
+
+TSTENV = perlio	Files=2320, Tests=531477, 226 wallclock secs (51.82 usr  6.89 sys + 363.87 cusr 61.95 csys = 484.53 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    4124
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341121603
+Started smoke at 1341121603
+
+Configuration: -Dusedevel -Dmad -DDEBUGGING
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=531382, 276 wallclock secs (65.12 usr  6.24 sys + 504.33 cusr 61.51 csys = 637.20 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    4627
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=531435, 265 wallclock secs (67.97 usr  7.24 sys + 481.05 cusr 62.05 csys = 618.31 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    4636
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341122288
+Started smoke at 1341122288
+
+Configuration: -Dusedevel -Duseithreads
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=541107, 310 wallclock secs (53.99 usr  5.77 sys + 607.62 cusr 60.13 csys = 727.51 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2919
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=541025, 258 wallclock secs (56.04 usr  7.53 sys + 422.32 cusr 62.44 csys = 548.33 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    3095
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341122979
+Started smoke at 1341122979
+
+Configuration: -Dusedevel -Duseithreads -DDEBUGGING
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=541011, 350 wallclock secs (71.15 usr  7.16 sys + 717.78 cusr 71.37 csys = 867.46 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    3612
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=541096, 303 wallclock secs (73.48 usr  8.72 sys + 542.39 cusr 73.52 csys = 698.11 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    3679
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341123785
+Started smoke at 1341123785
+
+Configuration: -Dusedevel -Duseithreads -Duse64bitint
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=540968, 309 wallclock secs (53.70 usr  5.70 sys + 2269668.25 cusr 63283.46 csys = 2333011.11 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2919
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=541059, 258 wallclock secs (55.49 usr  7.15 sys + 423.10 cusr 62.02 csys = 547.76 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    3095
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341124474
+Started smoke at 1341124474
+
+Configuration: -Dusedevel -Duseithreads -Duse64bitint -DDEBUGGING
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=541115, 352 wallclock secs (71.57 usr  7.10 sys + 720.01 cusr 71.77 csys = 870.45 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    3612
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=541150, 302 wallclock secs (73.44 usr  8.50 sys + 547.35 cusr 72.50 csys = 701.79 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    3678
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Stopped smoke at 1341125281
+Started smoke at 1341125281
+
+Configuration: -Dusedevel -Duseithreads -Dmad
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+Unable to make anything but miniperl in this configuration
+TSTENV = minitest	u=0.75  s=0.12  cu=30.26  cs=5.04  scripts=292  tests=168046
+    You may see some irrelevant test failures if you have been unable
+    to build lib/Config.pm, or the Unicode data files.
+    t/base/cond .................... ok
+    t/base/if ...................... ok
+    t/base/lex ..................... ok
+    t/base/num ..................... ok
+    t/base/pat ..................... ok
+    t/base/rs ...................... ok
+    t/base/term .................... ok
+    t/base/while ................... ok
+    t/comp/bproto .................. ok
+    t/comp/cmdopt .................. ok
+    t/comp/colon ................... ok
+    t/comp/decl .................... ok
+    t/comp/final_line_num .......... ok
+    t/comp/fold .................... ok
+    t/comp/form_scope .............. ok
+    t/comp/hints ................... ok
+    t/comp/line_debug .............. ok
+    t/comp/multiline ............... ok
+    t/comp/opsubs .................. ok
+    t/comp/our ..................... ok
+    t/comp/package ................. ok
+    t/comp/package_block ........... ok
+    t/comp/parser .................. ok
+    t/comp/proto ................... ok
+    t/comp/redef ................... ok
+    t/comp/require ................. FAILED at test 51
+    t/comp/retainedlines ........... ok
+    t/comp/term .................... ok
+    t/comp/uproto .................. ok
+    t/comp/use ..................... ok
+    t/comp/utf ..................... ok
+    t/cmd/elsif .................... ok
+    t/cmd/for ...................... ok
+    t/cmd/mod ...................... ok
+    t/cmd/subval ................... ok
+    t/cmd/switch ................... ok
+    t/cmd/while .................... ok
+    t/run/cloexec .................. ok
+    t/run/dtrace ................... skipped
+    t/run/exit ..................... ok
+    t/run/fresh_perl ............... ok
+    t/run/locale ................... skipped
+    t/run/noswitch ................. ok
+    t/run/runenv ................... ok
+    t/run/script ................... ok
+    t/run/switch0 .................. ok
+    t/run/switchC .................. skipped
+    t/run/switchF .................. ok
+    t/run/switchF1 ................. ok
+    t/run/switchI .................. ok
+    t/run/switcha .................. ok
+    t/run/switchd-78586 ............ ok
+    t/run/switchd .................. ok
+    t/run/switches ................. ok
+    t/run/switchn .................. ok
+    t/run/switchp .................. ok
+    t/run/switcht .................. ok
+    t/run/switchx .................. ok
+    t/io/argv ...................... ok
+    t/io/binmode ................... ok
+    t/io/bom ....................... ok
+    t/io/crlf ...................... ok
+    t/io/crlf_through .............. ok
+    t/io/data ...................... ok
+    t/io/defout .................... ok
+    t/io/dup ....................... ok
+    t/io/eintr ..................... ok
+    t/io/errno ..................... ok
+    t/io/errnosig .................. ok
+    t/io/fflush .................... ok
+    t/io/fs ........................ ok
+    t/io/inplace ................... ok
+    t/io/iofile .................... skipped
+    t/io/iprefix ................... ok
+    t/io/layers .................... skipped
+    t/io/nargv ..................... ok
+    t/io/open ...................... ok
+    t/io/openpid ................... ok
+    t/io/perlio .................... ok
+    t/io/perlio_fail ............... ok
+    t/io/perlio_leaks .............. ok
+    t/io/perlio_open ............... skipped
+    t/io/pipe ...................... ok
+    t/io/print ..................... ok
+    t/io/pvbm ...................... ok
+    t/io/read ...................... ok
+    t/io/say ....................... ok
+    t/io/shm ....................... skipped
+    t/io/tell ...................... ok
+    t/io/through ................... ok
+    t/io/utf8 ...................... ok
+    t/re/charset ................... ok
+    t/re/fold_grind ................ skipped
+    t/re/no_utf8_pm ................ ok
+    t/re/overload .................. ok
+    t/re/pat ....................... FAILED--no leader found
+    t/re/pat_advanced .............. skipped
+    t/re/pat_advanced_thr .......... skipped
+    t/re/pat_psycho ................ ok
+    t/re/pat_psycho_thr ............ skipped
+    t/re/pat_re_eval ............... skipped
+    t/re/pat_re_eval_thr ........... skipped
+    t/re/pat_rt_report ............. skipped
+    t/re/pat_rt_report_thr ......... skipped
+    t/re/pat_special_cc ............ ok
+    t/re/pat_special_cc_thr ........ skipped
+    t/re/pat_thr ................... skipped
+    t/re/qr-72922 .................. skipped
+    t/re/qr ........................ ok
+    t/re/qr_gc ..................... ok
+    t/re/qrstack ................... ok
+    t/re/recompile ................. skipped
+    t/re/reg_60508 ................. ok
+    t/re/reg_email ................. ok
+    t/re/reg_email_thr ............. skipped
+    t/re/reg_eval .................. ok
+    t/re/reg_eval_scope ............ skipped
+    t/re/reg_fold .................. skipped
+    t/re/reg_mesg .................. ok
+    t/re/reg_namedcapture .......... skipped
+    t/re/reg_nc_tie ................ skipped
+    t/re/reg_pmod .................. ok
+    t/re/reg_posixcc ............... ok
+    t/re/regexp .................... FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_noamp .............. FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_notrie ............. FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_qr ................. FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_qr_embed ........... FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_qr_embed_thr ....... skipped
+    t/re/regexp_trielist ........... FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_unicode_prop ....... skipped
+    t/re/regexp_unicode_prop_thr ... skipped
+    t/re/rxcode .................... ok
+    t/re/subst ..................... ok
+    t/re/substT .................... ok
+    t/re/subst_amp ................. ok
+    t/re/subst_wamp ................ ok
+    t/re/uniprops .................. ok
+    t/op/64bitint .................. ok
+    t/op/alarm ..................... ok
+    t/op/anonsub ................... ok
+    t/op/append .................... ok
+    t/op/args ...................... ok
+    t/op/arith ..................... ok
+    t/op/array ..................... ok
+    t/op/array_base ................ ok
+    t/op/assignwarn ................ ok
+    t/op/attrhand .................. skipped
+    t/op/attrs ..................... skipped
+    t/op/auto ...................... ok
+    t/op/avhv ...................... ok
+    t/op/bless ..................... ok
+    t/op/blocks .................... ok
+    t/op/bop ....................... ok
+    t/op/caller .................... ok
+    t/op/chars ..................... ok
+    t/op/chdir ..................... ok
+    t/op/chop ...................... ok
+    t/op/chr ....................... ok
+    t/op/closure ................... FAILED--no leader found
+    t/op/cmp ....................... ok
+    t/op/concat .................... ok
+    t/op/concat2 ................... skipped
+    t/op/cond ...................... ok
+    t/op/context ................... ok
+    t/op/coreamp ................... ok
+    t/op/coresubs .................. skipped
+    t/op/cproto .................... ok
+    t/op/crypt ..................... ok
+    t/op/current_sub ............... ok
+    t/op/dbm ....................... skipped
+    t/op/defins .................... ok
+    t/op/delete .................... ok
+    t/op/die ....................... ok
+    t/op/die_except ................ ok
+    t/op/die_exit .................. ok
+    t/op/die_keeperr ............... ok
+    t/op/die_unwind ................ ok
+    t/op/do ........................ ok
+    t/op/dor ....................... ok
+    t/op/each ...................... ok
+    t/op/each_array ................ ok
+    t/op/eval ...................... FAILED at test 124
+    t/op/evalbytes ................. ok
+    t/op/exec ...................... ok
+    t/op/exists_sub ................ ok
+    t/op/exp ....................... ok
+    t/op/fh ........................ ok
+    t/op/filehandle ................ skipped
+    t/op/filetest .................. ok
+    t/op/filetest_stack_ok ......... ok
+    t/op/filetest_t ................ ok
+    t/op/flip ...................... ok
+    t/op/fork ...................... ok
+    t/op/fresh_perl_utf8 ........... ok
+    t/op/getpid .................... skipped
+    t/op/getppid ................... ok
+    t/op/glob ...................... ok
+    t/op/gmagic .................... ok
+    t/op/goto ...................... ok
+    t/op/goto_xs ................... skipped
+    t/op/grent ..................... ok
+    t/op/grep ...................... ok
+    t/op/groups .................... skipped
+    t/op/gv ........................ ok
+    t/op/hash-rt85026 .............. skipped
+    t/op/hash ...................... ok
+    t/op/hashassign ................ ok
+    t/op/hashwarn .................. ok
+    t/op/inc ....................... ok
+    t/op/inccode-tie ............... ok
+    t/op/inccode ................... ok
+    t/op/incfilter ................. skipped
+    t/op/index ..................... ok
+    t/op/index_thr ................. skipped
+    t/op/int ....................... ok
+    t/op/join ...................... ok
+    t/op/kill0 ..................... ok
+    t/op/lc ........................ ok
+    t/op/leaky-magic ............... ok
+    t/op/length .................... ok
+    t/op/lex ....................... ok
+    t/op/lex_assign ................ ok
+    t/op/lfs ....................... skipped
+    t/op/list ...................... ok
+    t/op/local ..................... ok
+    t/op/localref .................. ok
+    t/op/lock ...................... ok
+    t/op/loopctl ................... ok
+    t/op/lop ....................... ok
+    t/op/magic-27839 ............... skipped
+    t/op/magic ..................... ok
+    t/op/magic_phase ............... ok
+    t/op/method .................... ok
+    t/op/mkdir ..................... ok
+    t/op/my ........................ ok
+    t/op/my_stash .................. ok
+    t/op/mydef ..................... ok
+    t/op/negate .................... ok
+    t/op/not ....................... ok
+    t/op/numconvert ................ ok
+    t/op/oct ....................... ok
+    t/op/or ........................ ok
+    t/op/ord ....................... ok
+    t/op/overload_integer .......... ok
+    t/op/override .................. ok
+    t/op/pack ...................... ok
+    t/op/packagev .................. ok
+    t/op/pos ....................... ok
+    t/op/pow ....................... ok
+    t/op/print ..................... ok
+    t/op/protowarn ................. ok
+    t/op/push ...................... ok
+    t/op/pwent ..................... ok
+    t/op/qq ........................ ok
+    t/op/qr ........................ ok
+    t/op/quotemeta ................. ok
+    t/op/rand ...................... ok
+    t/op/range ..................... ok
+    t/op/read ...................... ok
+    t/op/readdir ................... ok
+    t/op/readline .................. ok
+    t/op/recurse ................... ok
+    t/op/ref ....................... ok
+    t/op/repeat .................... ok
+    t/op/require_37033 ............. ok
+    t/op/require_errors ............ ok
+    t/op/reset ..................... ok
+    t/op/reverse ................... ok
+    t/op/runlevel .................. ok
+    t/op/select .................... ok
+    t/op/setpgrpstack .............. ok
+    t/op/sigdispatch ............... ok
+    t/op/sigsystem ................. skipped
+    t/op/sleep ..................... ok
+    t/op/smartkve .................. ok
+    t/op/smartmatch ................ ok
+    t/op/sort ...................... ok
+    t/op/splice .................... ok
+    t/op/split ..................... ok
+    t/op/split_unicode ............. skipped
+    t/op/sprintf ................... ok
+    t/op/sprintf2 .................. ok
+    t/op/srand ..................... ok
+    t/op/sselect ................... ok
+    t/op/stash ..................... ok
+    t/op/stat ...................... ok
+    t/op/state ..................... ok
+    t/op/study ..................... ok
+    t/op/studytied ................. ok
+    t/op/sub ....................... ok
+    t/op/sub_lval .................. ok
+    t/op/substr .................... ok
+    t/op/substr_thr ................ skipped
+    t/op/svleak .................... skipped
+    t/op/switch .................... ok
+    t/op/symbolcache ............... ok
+    t/op/sysio ..................... ok
+    t/op/taint ..................... skipped
+    t/op/threads-dirh .............. skipped
+    t/op/threads ................... skipped
+    t/op/tie ....................... ok
+    t/op/tie_fetch_count ........... ok
+    t/op/tiearray .................. ok
+    t/op/tiehandle ................. ok
+    t/op/time ...................... ok
+    t/op/time_loop ................. ok
+    t/op/tr ........................ ok
+    t/op/undef ..................... ok
+    t/op/universal ................. ok
+    t/op/unlink .................... ok
+    t/op/unshift ................... ok
+    t/op/upgrade ................... ok
+    t/op/utf8cache ................. skipped
+    t/op/utf8decode ................ ok
+    t/op/utf8magic ................. ok
+    t/op/utfhash ................... ok
+    t/op/utftaint .................. ok
+    t/op/vec ....................... ok
+    t/op/ver ....................... ok
+    t/op/wantarray ................. ok
+    t/op/warn ...................... ok
+    t/op/while_readdir ............. ok
+    t/op/write ..................... ok
+    t/op/yadayada .................. ok
+    t/uni/attrs .................... skipped
+    t/uni/bless .................... ok
+    t/uni/cache .................... ok
+    t/uni/caller ................... ok
+    t/uni/chomp .................... skipped
+    t/uni/chr ...................... skipped
+    t/uni/class .................... ok
+    t/uni/eval ..................... ok
+    t/uni/fold ..................... FAILED--no leader found
+    t/uni/goto ..................... ok
+    t/uni/greek .................... skipped
+    t/uni/gv ....................... ok
+    t/uni/labels ................... FAILED--no leader found
+    t/uni/latin2 ................... skipped
+    t/uni/lex_utf8 ................. skipped
+    t/uni/lower .................... FAILED--no leader found
+    t/uni/method ................... ok
+    t/uni/opcroak .................. ok
+    t/uni/overload ................. ok
+    t/uni/package .................. ok
+    t/uni/parser ................... FAILED--no leader found
+    t/uni/readline ................. ok
+    t/uni/select ................... ok
+    t/uni/sprintf .................. ok
+    t/uni/stash .................... ok
+    t/uni/tie ...................... ok
+    t/uni/title .................... FAILED--no leader found
+    t/uni/tr_7jis .................. skipped
+    t/uni/tr_eucjp ................. skipped
+    t/uni/tr_sjis .................. skipped
+    t/uni/tr_utf8 .................. skipped
+    t/uni/universal ................ ok
+    t/uni/upper .................... FAILED--no leader found
+    t/uni/write .................... ok
+    	comp/require.t
+    	op/closure.t
+    	op/eval.t
+    	re/pat.t
+    	re/regexp.t
+    	re/regexp_noamp.t
+    	re/regexp_notrie.t
+    	re/regexp_qr.t
+    	re/regexp_qr_embed.t
+    	re/regexp_trielist.t
+    	uni/fold.t
+    	uni/labels.t
+    	uni/lower.t
+    	uni/parser.t
+    	uni/title.t
+    	uni/upper.t
+     (ignored)
+Stopped smoke at 1341125492
+Started smoke at 1341125492
+
+Configuration: -Dusedevel -Duseithreads -Dmad -DDEBUGGING
+------------------------------------------------------------------------------
+
+Compiler info: cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+TSTENV = stdio	Files=2320, Tests=541062, 361 wallclock secs (74.86 usr  7.01 sys + 773.71 cusr 73.71 csys = 929.29 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    2535
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+TSTENV = perlio	Files=2320, Tests=541077, 314 wallclock secs (76.92 usr  8.35 sys + 595.99 cusr 75.51 csys = 756.77 CPU)
+
+../t/porting/checkcase.t....................................FAILED
+    4743
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+
+Finished smoking 49f4c4e423fa15e3da8c813a7526bb78740f9018 v5.17.1-268-g49f4c4e
+Stopped smoke at 1341126327

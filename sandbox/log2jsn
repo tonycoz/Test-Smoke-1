@@ -1,0 +1,40 @@
+#!/pro/bin/perl
+
+use v5.14.1;
+use warnings;
+
+use lib map { "/pro/3gl/CPAN/Test-Smoke-svn/$_" } qw( blib/lib blib/arch );
+use Data::Peek;
+use Test::Smoke;
+use Test::Smoke::Reporter;
+
+use JSON;
+
+my %arg = ( version => "5.17.2" );
+
+my ($jsn, $log, $out);
+foreach my $fn (@ARGV) {
+
+    my $fc = do {
+	open my $fh, "<:encoding(utf-8)", $fn or die "$fn: $!\n";
+	local $/;
+	<$fh>;
+	} or die "Cannot read $fn\n";
+
+    if ($fn =~ m/jso?n/) {
+	$jsn = decode_json ($fc) or die "Cannot decode JSON\n";
+	next;
+	}
+
+    if ($fn =~ m/out/) {
+	$out = $fc;
+	$arg{outfile} = $fn;
+	next;
+	}
+    }
+
+my $r = Test::Smoke::Reporter->new (\%arg);
+
+#DDumper ($r->{_rpt});
+delete $r->{_outfile};
+DDumper ($r);

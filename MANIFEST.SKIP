@@ -9,6 +9,7 @@ mkdist.sh
 provesmoke
 resmoke.pl
 roadmap.pod
+sandbox/
 sprove.pl
 tags
 TAGS

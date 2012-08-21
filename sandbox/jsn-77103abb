@@ -1,0 +1,825 @@
+{
+   "locale" : "",
+   "lfile" : "/home/perlsmoke/smoke-me/smoke/smokecurrent.log",
+   "showcfg" : 0,
+   "sysinfo" : {
+      "smoker_version" : "0.045",
+      "git_describe" : "v5.17.1-268-g49f4c4e",
+      "hostname" : "deimos.tony.develop-help.com",
+      "reporter" : "tony@develop-help.com",
+      "reporter_version" : "0.050",
+      "architecture" : "amd64",
+      "cpu_count" : "6",
+      "test_jobs" : null,
+      "osversion" : "5.1",
+      "lc_all" : null,
+      "osname" : "netbsd",
+      "config_count" : 12,
+      "git_id" : "49f4c4e423fa15e3da8c813a7526bb78740f9018",
+      "smoke_perl" : "5.14.2",
+      "smoke_date" : "2012-07-01 14:56:32 +1000",
+      "lang" : null,
+      "user_note" : "UUID: 1CBD878C-C339-11E1-B076-F175685B3424\nBranch: origin/blead\nConfig: default\nLogs: http://perl.develop-help.com/reports/\n",
+      "cpu_description" : "AMD 686-class",
+      "duration" : 7735,
+      "username" : "perlsmoke",
+      "smoke_revision" : null,
+      "smoke_version" : "1.53",
+      "perl_id" : "5.17.2"
+      },
+   "rptfile" : "mktest.rpt",
+   "summary" : "FAIL(FM)",
+   "defaultenv" : 0,
+   "outfile" : "mktest.out",
+   "compiler_msgs" : [
+      "Pattern(gcc): /(^(?-s:.+?):(?: In function .+?:$|(?: undefined reference to .+?$)|\\d+(?:\\:\\d+)?: (?:warning:|error:|invalid) .+?$))/"
+      ],
+   "manifest_msgs" : [   ],
+   "out_file" : null,
+   "harness3opts" : "j4",
+   "harness_only" : "1",
+   "applied_patches" : [
+      "SMOKE49f4c4e423fa15e3da8c813a7526bb78740f9018"
+      ],
+   "v" : "2",
+   "jsnfile" : "mktest.jsn",
+   "log_file" : null,
+   "cfg" : "/home/perlsmoke/smoke-me/smoke/perlcurrent.cfg",
+   "is56x" : 0,
+   "ddir" : "/home/perlsmoke/smoke-me/perl-current",
+   "skip_tests" : "",
+   "skipped_tests" : [   ],
+   "configs" : [
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "",
+         "debugging" : "N",
+         "started" : "2012-07-01 14:56:32 +1000",
+         "duration" : 554,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2321"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "485.91",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531438, 229 wallclock secs (48.05 usr  5.45 sys + 376.79 cusr 55.62 csys = 485.91 CPU",
+               "stat_tests" : "531438",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2330"
+                        ]
+                     },
+                  {
+                     "test" : "../lib/Benchmark.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "129",
+                        "Non-zero exit status: 1"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "455.35",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531451, 221 wallclock secs (50.22 usr  6.86 sys + 340.61 cusr 57.66 csys = 455.35 CPU",
+               "stat_tests" : "531451",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "",
+         "debugging" : "D",
+         "started" : "2012-07-01 15:05:46 +1000",
+         "duration" : 665,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2950"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "599.00",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531421, 263 wallclock secs (64.29 usr  5.96 sys + 470.67 cusr 58.08 csys = 599.00 CPU",
+               "stat_tests" : "531421",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2960"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "597.94",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531323, 260 wallclock secs (66.21 usr  6.84 sys + 463.86 cusr 61.03 csys = 597.94 CPU",
+               "stat_tests" : "531323",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duse64bitint",
+         "debugging" : "N",
+         "started" : "2012-07-01 15:16:51 +1000",
+         "duration" : 557,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2322"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "473.91",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531468, 223 wallclock secs (47.91 usr  6.05 sys + 365.13 cusr 54.82 csys = 473.91 CPU",
+               "stat_tests" : "531468",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2330"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "458.26",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531530, 220 wallclock secs (50.12 usr  7.33 sys + 342.46 cusr 58.35 csys = 458.26 CPU",
+               "stat_tests" : "531530",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duse64bitint",
+         "debugging" : "D",
+         "started" : "2012-07-01 15:26:08 +1000",
+         "duration" : 663,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2951"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "598.88",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531381, 264 wallclock secs (64.15 usr  6.04 sys + 470.52 cusr 58.17 csys = 598.88 CPU",
+               "stat_tests" : "531381",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2960"
+                        ]
+                     },
+                  {
+                     "test" : "../lib/Benchmark.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "129",
+                        "Non-zero exit status: 1"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "585.76",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531463, 259 wallclock secs (66.36 usr  6.82 sys + 451.39 cusr 61.19 csys = 585.76 CPU",
+               "stat_tests" : "531463",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Dmad",
+         "debugging" : "N",
+         "started" : "2012-07-01 15:37:11 +1000",
+         "duration" : 572,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "4112"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     },
+                  {
+                     "test" : "../lib/Benchmark.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "129",
+                        "Non-zero exit status: 1"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "494.24",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531361, 229 wallclock secs (49.05 usr  5.75 sys + 380.26 cusr 59.18 csys = 494.24 CPU",
+               "stat_tests" : "531361",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "4124"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "484.53",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531477, 226 wallclock secs (51.82 usr  6.89 sys + 363.87 cusr 61.95 csys = 484.53 CPU",
+               "stat_tests" : "531477",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Dmad",
+         "debugging" : "D",
+         "started" : "2012-07-01 15:46:43 +1000",
+         "duration" : 685,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "4627"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "637.20",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531382, 276 wallclock secs (65.12 usr  6.24 sys + 504.33 cusr 61.51 csys = 637.20 CPU",
+               "stat_tests" : "531382",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "4636"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "618.31",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=531435, 265 wallclock secs (67.97 usr  7.24 sys + 481.05 cusr 62.05 csys = 618.31 CPU",
+               "stat_tests" : "531435",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duseithreads",
+         "debugging" : "N",
+         "started" : "2012-07-01 15:58:08 +1000",
+         "duration" : 691,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2919"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "727.51",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541107, 310 wallclock secs (53.99 usr  5.77 sys + 607.62 cusr 60.13 csys = 727.51 CPU",
+               "stat_tests" : "541107",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "3095"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "548.33",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541025, 258 wallclock secs (56.04 usr  7.53 sys + 422.32 cusr 62.44 csys = 548.33 CPU",
+               "stat_tests" : "541025",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duseithreads",
+         "debugging" : "D",
+         "started" : "2012-07-01 16:09:39 +1000",
+         "duration" : 806,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "3612"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "867.46",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541011, 350 wallclock secs (71.15 usr  7.16 sys + 717.78 cusr 71.37 csys = 867.46 CPU",
+               "stat_tests" : "541011",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "3679"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "698.11",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541096, 303 wallclock secs (73.48 usr  8.72 sys + 542.39 cusr 73.52 csys = 698.11 CPU",
+               "stat_tests" : "541096",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duseithreads -Duse64bitint",
+         "debugging" : "N",
+         "started" : "2012-07-01 16:23:05 +1000",
+         "duration" : 689,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2919"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "2333011.11",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=540968, 309 wallclock secs (53.70 usr  5.70 sys + 2269668.25 cusr 63283.46 csys = 2333011.11 CPU",
+               "stat_tests" : "540968",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "3095"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "547.76",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541059, 258 wallclock secs (55.49 usr  7.15 sys + 423.10 cusr 62.02 csys = 547.76 CPU",
+               "stat_tests" : "541059",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duseithreads -Duse64bitint",
+         "debugging" : "D",
+         "started" : "2012-07-01 16:34:34 +1000",
+         "duration" : 807,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "3612"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "870.45",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541115, 352 wallclock secs (71.57 usr  7.10 sys + 720.01 cusr 71.77 csys = 870.45 CPU",
+               "stat_tests" : "541115",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "3678"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "701.79",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541150, 302 wallclock secs (73.44 usr  8.50 sys + 547.35 cusr 72.50 csys = 701.79 CPU",
+               "stat_tests" : "541150",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duseithreads -Dmad",
+         "debugging" : "N",
+         "started" : "2012-07-01 16:48:01 +1000",
+         "duration" : 211,
+         "results" : [
+            {
+               "failures" : [   ],
+               "stat_cpu_time" : null,
+               "summary" : "M",
+               "statistics" : null,
+               "stat_tests" : null,
+               "io_env" : "minitest",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     },
+                  {
+                     "test" : "?",
+                     "status" : "?",
+                     "extra" : [   ]
+                     }
+                  ],
+               "stat_cpu_time" : 36.17,
+               "summary" : "F",
+               "statistics" : "u=0.75  s=0.12  cu=30.26  cs=5.04  scripts=292  tests=168046",
+               "stat_tests" : "168046",
+               "io_env" : "minitest",
+               "locale" : null
+               }
+            ]
+         },
+      {
+         "ccversion" : "4.1.3 20080704 prerelease (NetBSD nb2 20081120)",
+         "cc" : "cc",
+         "arguments" : "-Duseithreads -Dmad",
+         "debugging" : "D",
+         "started" : "2012-07-01 16:51:32 +1000",
+         "duration" : 835,
+         "results" : [
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "2535"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "929.29",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541062, 361 wallclock secs (74.86 usr  7.01 sys + 773.71 cusr 73.71 csys = 929.29 CPU",
+               "stat_tests" : "541062",
+               "io_env" : "stdio",
+               "locale" : null
+               },
+            {
+               "failures" : [
+                  {
+                     "test" : "../t/porting/checkcase.t",
+                     "status" : "FAILED",
+                     "extra" : [
+                        "4743"
+                        ]
+                     },
+                  {
+                     "test" : "../cpan/CGI/t/tmpdir.t",
+                     "status" : "PASSED",
+                     "extra" : [
+                        "3-9"
+                        ]
+                     }
+                  ],
+               "stat_cpu_time" : "756.77",
+               "summary" : "F",
+               "statistics" : "Files=2320, Tests=541077, 314 wallclock secs (76.92 usr  8.35 sys + 595.99 cusr 75.51 csys = 756.77 CPU",
+               "stat_tests" : "541077",
+               "io_env" : "perlio",
+               "locale" : null
+               }
+            ]
+         }
+      ]
+   }

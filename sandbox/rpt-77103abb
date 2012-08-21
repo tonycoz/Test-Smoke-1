@@ -1,0 +1,166 @@
+Automated smoke report for 5.17.2 patch 49f4c4e423fa15e3da8c813a7526bb78740f9018 v5.17.1-268-g49f4c4e
+deimos.tony.develop-help.com: AMD 686-class (amd64/6 cpu)
+    on        netbsd - 5.1
+    using     cc version 4.1.3 20080704 prerelease (NetBSD nb2 20081120)
+    smoketime 2 hours 8 minutes (average 10 minutes 45 seconds)
+
+Summary: FAIL(FM)
+
+O = OK  F = Failure(s), extended report at the bottom
+X = Failure(s) under TEST but not under harness
+? = still running or test results not (yet) available
+Build failures during:       - = unknown or N/A
+c = Configure, m = make, M = make (after miniperl), t = make test-prep
+
+v5.17.1-268-g49f4c4e  Configuration (common) none
+----------- ---------------------------------------------------------
+F F F F     
+F F F F     -Duse64bitint
+F F F F     -Dmad
+F F F F     -Duseithreads
+F F F F     -Duseithreads -Duse64bitint
+M - F F     -Duseithreads -Dmad
+| | | +----- PERLIO = perlio -DDEBUGGING
+| | +------- PERLIO = stdio  -DDEBUGGING
+| +--------- PERLIO = perlio
++----------- PERLIO = stdio
+
+
+Locally applied patches:
+    SMOKE49f4c4e423fa15e3da8c813a7526bb78740f9018
+
+Testsuite was run only with 'harness' and HARNESS_OPTIONS=j4
+
+Failures: (common-args) none
+[stdio] 
+../t/porting/checkcase.t....................................FAILED
+    2321
+
+[perlio] 
+../t/porting/checkcase.t....................................FAILED
+    2330
+../lib/Benchmark.t..........................................FAILED
+    129
+    Non-zero exit status: 1
+
+[stdio] -DDEBUGGING
+../t/porting/checkcase.t....................................FAILED
+    2950
+
+[perlio] -DDEBUGGING
+../t/porting/checkcase.t....................................FAILED
+    2960
+
+[stdio] -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    2322
+
+[perlio] -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    2330
+
+[stdio] -DDEBUGGING -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    2951
+
+[perlio] -DDEBUGGING -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    2960
+../lib/Benchmark.t..........................................FAILED
+    129
+    Non-zero exit status: 1
+
+[stdio] -Dmad
+../t/porting/checkcase.t....................................FAILED
+    4112
+../lib/Benchmark.t..........................................FAILED
+    129
+    Non-zero exit status: 1
+
+[perlio] -Dmad
+../t/porting/checkcase.t....................................FAILED
+    4124
+
+[stdio] -DDEBUGGING -Dmad
+../t/porting/checkcase.t....................................FAILED
+    4627
+
+[perlio] -DDEBUGGING -Dmad
+../t/porting/checkcase.t....................................FAILED
+    4636
+
+[stdio] -Duseithreads
+[stdio] -Duseithreads -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    2919
+
+[perlio] -Duseithreads
+[perlio] -Duseithreads -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    3095
+
+[stdio] -DDEBUGGING -Duseithreads
+[stdio] -DDEBUGGING -Duseithreads -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    3612
+
+[perlio] -DDEBUGGING -Duseithreads
+../t/porting/checkcase.t....................................FAILED
+    3679
+
+[perlio] -DDEBUGGING -Duseithreads -Duse64bitint
+../t/porting/checkcase.t....................................FAILED
+    3678
+
+[minitest] -Duseithreads -Dmad
+    t/comp/require ................. FAILED at test 51
+    t/re/pat ....................... FAILED--no leader found
+    t/re/regexp .................... FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_noamp .............. FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_notrie ............. FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_qr ................. FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_qr_embed ........... FAILED--expected 1683 tests, saw 1584
+    t/re/regexp_trielist ........... FAILED--expected 1683 tests, saw 1584
+    t/op/closure ................... FAILED--no leader found
+    t/op/eval ...................... FAILED at test 124
+    t/uni/fold ..................... FAILED--no leader found
+    t/uni/labels ................... FAILED--no leader found
+    t/uni/lower .................... FAILED--no leader found
+    t/uni/parser ................... FAILED--no leader found
+    t/uni/title .................... FAILED--no leader found
+    t/uni/upper .................... FAILED--no leader found
+
+[stdio] -DDEBUGGING -Duseithreads -Dmad
+../t/porting/checkcase.t....................................FAILED
+    2535
+
+[perlio] -DDEBUGGING -Duseithreads -Dmad
+../t/porting/checkcase.t....................................FAILED
+    4743
+
+Passed Todo tests: (common-args) none
+[stdio/perlio] 
+[stdio/perlio] -DDEBUGGING
+[stdio/perlio] -Duse64bitint
+[stdio/perlio] -DDEBUGGING -Duse64bitint
+[stdio/perlio] -Dmad
+[stdio/perlio] -DDEBUGGING -Dmad
+[stdio/perlio] -Duseithreads
+[stdio/perlio] -DDEBUGGING -Duseithreads
+[stdio/perlio] -Duseithreads -Duse64bitint
+[stdio/perlio] -DDEBUGGING -Duseithreads -Duse64bitint
+[stdio/perlio] -DDEBUGGING -Duseithreads -Dmad
+../cpan/CGI/t/tmpdir.t......................................PASSED
+    3-9
+UUID: 1CBD878C-C339-11E1-B076-F175685B3424
+Branch: origin/blead
+Config: default
+Logs: http://perl.develop-help.com/reports/
+
+-- 
+Report by Test::Smoke v1.53 build  running on perl 5.14.2
+(Reporter v0.050 / Smoker v0.045)
+
+Logs at http://perl.develop-help.com/reports/
+Branch: origin/blead
+Configuration: default
