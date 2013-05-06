@@ -153,23 +153,26 @@ sub __get_os {
                 }
                 elsif ( @osi && $osi[0] =~ m{^\s*([-A-Za-z0-9. ""/]+)} ) {
                     # /etc/issue:
-                    # Welcome to openSUSE 11.2 "Emerald" - Kernel \r (\l).
-                    # Welcome to openSUSE 11.3 "Teal" - Kernel \r (\l).
-                    # Welcome to openSUSE 11.4 "Celadon" - Kernel \r (\l).
-                    # Welcome to openSUSE 12.1 "Asparagus" - Kernel \r (\l).
-                    # Welcome to openSUSE 12.2 "Mantis" - Kernel \r (\l).
-                    # Welcome to openSUSE 12.3 "Dartmouth" - Kernel \r (\l).
-                    # Ubuntu 10.04.4 LTS \n \l
-                    # Debian GNU/Linux wheezy/sid \n \l
-                    # Debian GNU/Linux 6.0 \n \l
+                    #  Welcome to openSUSE 11.1 - Kernel \r (\l).
+                    #  Welcome to openSUSE 11.2 "Emerald" - Kernel \r (\l).
+                    #  Welcome to openSUSE 11.3 "Teal" - Kernel \r (\l).
+                    #  Welcome to openSUSE 11.4 "Celadon" - Kernel \r (\l).
+                    #  Welcome to openSUSE 12.1 "Asparagus" - Kernel \r (\l).
+                    #  Welcome to openSUSE 12.2 "Mantis" - Kernel \r (\l).
+                    #  Welcome to openSUSE 12.3 "Dartmouth" - Kernel \r (\l).
+                    #  Ubuntu 10.04.4 LTS \n \l
+                    #  Debian GNU/Linux wheezy/sid \n \l
+                    #  Debian GNU/Linux 6.0 \n \l
                     # /etc/redhat-release:
-                    # CentOS release 5.7 (Final)
-                    # Red Hat Enterprise Linux ES release 4 (Nahant Update 2)
+                    #  CentOS release 5.7 (Final)
+                    #  Red Hat Enterprise Linux ES release 4 (Nahant Update 2)
                     # /etc/debian_version:
-                    # 6.0.4
-                    # wheezy/sid
+                    #  6.0.4
+                    #  wheezy/sid
+                    #  squeeze/sid
                     ($distro = $1) =~ s/^Welcome\s+to\s+//i;
                     $distro =~ s/\s+-\s+Kernel.*//i;
+                    $distro =~ s/\s*\\[rln].*//;
                 }
             }
             $distro =~ s/^\s*(.*\S)\s*$/$1/ and $os .= " [$distro]";
