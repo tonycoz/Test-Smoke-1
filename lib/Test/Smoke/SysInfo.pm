@@ -137,7 +137,7 @@ sub __get_os {
             (my $distro = $dist_file) =~ s{^/etc/}{};
             $distro =~ s{[-_](?:release|version)\b}{}i;
             if ( CORE::open my $fh, "<", $dist_file ) {
-                my @osi = <$fh>;
+                my @osi = grep m/\S/ => <$fh>;
                 close $fh;
                 my %os = map { m/^\s*\U(\S+)\E\s*=\s*(.*)\s*$/ } @osi;
                 s/^"\s*(.*?)\s*"$/$1/ for values %os;
@@ -160,6 +160,7 @@ sub __get_os {
                     #  Welcome to openSUSE 12.1 "Asparagus" - Kernel \r (\l).
                     #  Welcome to openSUSE 12.2 "Mantis" - Kernel \r (\l).
                     #  Welcome to openSUSE 12.3 "Dartmouth" - Kernel \r (\l).
+                    #  Welcome to SUSE Linux Enterprise Server 11 SP1 for VMware  (x86_64) - Kernel \r (\l).
                     #  Ubuntu 10.04.4 LTS \n \l
                     #  Debian GNU/Linux wheezy/sid \n \l
                     #  Debian GNU/Linux 6.0 \n \l
