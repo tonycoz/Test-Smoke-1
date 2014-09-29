@@ -38,6 +38,7 @@ my %options = (
     fetch        => 1,
     patch        => 1,
     mail         => undef,
+    send         => 1,
     smokedb_url  => undef,
     ua_timeout   => undef,
     send_out     => "never",
@@ -61,6 +62,7 @@ GetOptions( \%options,
     'patch!',
     'ccp5p_onfail!',
     'mail!',
+    'send!',
     'smokedb_url=s',
     'delay_report!',
     'run!',
@@ -104,6 +106,7 @@ It can take these options
   --nofetch                Skip the synctree step
   --nopatch                Skip the patch step
   --nomail                 Skip the mail step
+  --nosend                 Skip the smoke database send
   --noarchive              Skip the archive step (if applicable)
   --[no]ccp5p_onfail       Do (not) send failure reports to perl5-porters
   --[no]delay_report       Do (not) create the report now
@@ -150,7 +153,7 @@ defined $options{fetch} && !$options{fetch} && !defined $options{smartsmoke}
 # Make command-line options override configfile
 defined $options{ $_ } and $conf->{ $_ } = $options{ $_ }
     for qw( is56x defaultenv continue killtime pfile cfg delay_report v run
-            smartsmoke fetch patch mail smokedb_url ccp5p_onfail archive );
+            smartsmoke fetch patch mail send smokedb_url ccp5p_onfail archive );
 
 # Make sure the --pfile command-line override works
 $options{pfile} and $conf->{patch_type} ||= 'multi';
@@ -271,7 +274,7 @@ sub sendrpt {
         $conf->{v} and print "Skipping mailrpt\n";
     }
 
-    if ($conf->{smokedb_url}) {
+    if ( $conf->{send} && $conf->{smokedb_url} ) {
         require LWP::UserAgent;
         my $ua = LWP::UserAgent->new(
             agent => "Test::Smoke/$Test::Smoke::VERSION",
